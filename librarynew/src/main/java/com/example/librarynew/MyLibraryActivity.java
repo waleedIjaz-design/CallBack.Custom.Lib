@@ -2,10 +2,12 @@ package com.example.librarynew;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MyLibraryActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -24,6 +26,12 @@ public class MyLibraryActivity extends AppCompatActivity implements View.OnClick
         sub = findViewById(R.id.sub);
         add.setOnClickListener(this);
         sub.setOnClickListener(this);
+
+    }
+
+    public static void s (Context c, String message){
+
+        Toast.makeText(c,message, Toast.LENGTH_SHORT).show();
 
     }
 
