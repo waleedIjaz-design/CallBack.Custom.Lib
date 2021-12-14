@@ -1,0 +1,3 @@
+rootProject.name = "CallBack Custom Library"
+include ':app'
+include ':librarynew'
