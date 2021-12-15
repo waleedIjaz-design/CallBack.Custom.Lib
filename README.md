@@ -1,6 +1,6 @@
 Dependency:
 
- implementation 'com.github.waleedIjaz-design:CallBack.Custom.Lib:1.3.3'
+implementation 'com.github.waleedIjaz-design:CallBack.Custom.Lib:1.3.4'
  
  
  Maven:
