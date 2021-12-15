@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity implements MyLibraryActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editText1 = findViewById(com.example.librarynew.R.id.number1);
-        editText2 = findViewById(com.example.librarynew.R.id.number2);
-        editText3 = findViewById(com.example.librarynew.R.id.result);
-        add = findViewById(com.example.librarynew.R.id.add);
-        sub = findViewById(com.example.librarynew.R.id.sub);
+        editText1 = findViewById(R.id.number1);
+        editText2 = findViewById(R.id.number2);
+        editText3 = findViewById(R.id.result);
+        add = findViewById(R.id.add);
+        sub = findViewById(R.id.sub);
         add.setOnClickListener(this);
         sub.setOnClickListener(this);
 
@@ -48,12 +48,12 @@ public class MainActivity extends AppCompatActivity implements MyLibraryActivity
             int i = Integer.parseInt(num1);
             int j = Integer.parseInt(num2);
             int id = view.getId();
-            if (id == com.example.librarynew.R.id.add) {
+            if (id == R.id.add) {
 
                 editText3.setText("Add=" + (i + j));
                 MyLibraryActivity.addition(getData, i,j);
 
-            } else if (id == com.example.librarynew.R.id.sub) {
+            } else if (id == R.id.sub) {
                 editText3.setText("Sub=" + (i - j));
                 MyLibraryActivity.subtraction(getData,i,j);
             }
